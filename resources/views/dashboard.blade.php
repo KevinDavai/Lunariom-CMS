@@ -7,7 +7,11 @@
 
     <div class="card my-4">
         <div class="card-body">
-            You're logged in!
+            @auth
+                You are logged in!
+            @else
+                You are a guest !
+            @endauth
         </div>
     </div>
 </x-app-layout>
